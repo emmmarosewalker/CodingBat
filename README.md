@@ -1,7 +1,7 @@
 # CodingBat
 These are problems from the website codingbat.com. They are algorithmic problems with sets of test cases. 
 For example:
-
+```python
 def sum13(nums):
     """ Return the sum of the numbers in the array,
     returning 0 for an empty array. Except the number 13
@@ -34,5 +34,6 @@ def sum13(nums):
         i += 1
 
     return sum
+```
 
 All tests passed before adding to git
