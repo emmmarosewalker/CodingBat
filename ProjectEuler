@@ -1,0 +1,62 @@
+def multiples_3_5():
+    sum = 0
+    for num in range(1000):
+        if num % 5 == 0 or num % 3 == 0:
+            sum += num
+    return sum
+
+
+def fib(n):
+    if n == 1:
+        return 1
+    if n == 0:
+        return 0
+    else: return fib(n-1) + fib(n-2)
+
+
+def even_fib():
+    n = 1
+    sum = 0
+    while fib(n) < 4000000:
+        if fib(n) % 2 == 0:
+            sum += fib(n)
+        print(n)
+        n += 1
+    return sum
+
+
+def prime_nums(max):
+    prime_list = []
+    for p in range(2, max+1):
+        for i in range(2, p):
+            if p % i == 0:
+                break
+        else:
+            print(p)
+            prime_list.append(p)
+    return prime_list
+
+
+def prime_factors(max=600851475143):
+    prime_list = prime_nums(7000)
+    prime_fact_list = []
+    for num in prime_list:
+        if max % num == 0:
+            prime_fact_list.append(num)
+
+    return prime_fact_list
+
+
+def check_palindrome_num(num):
+    # 9009
+    num_string = str(num)
+    char_list = [s for s in num_string]
+    print(char_list)
+    is_palindrome = False
+    for i in range(len(char_list)//2):
+        if char_list[i] != char_list[-(i+1)]:
+            return False
+    return is_palindrome
+
+print(check_palindrome_num(9009))
+
