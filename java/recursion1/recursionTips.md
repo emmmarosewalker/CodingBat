@@ -47,10 +47,15 @@ h.substring(1); // returns "ello"
 ```
 
 substring() can also take 2 arguments, a start and stop (non inclusive) index.
+
+To reduce by one digit at a time:
+```java
+return someFunction(n/10); 
+```
 ____
 
 ## 3. What do you want to keep track of?
-In factorial case, we want to multiply each function call by the answer of the previous call. This is the n * element of our return statement.
+Usually we are returning *something* + (or * or whatever it may be) our function call. E.g. in factorial, we want to multiply each function call by the answer of the previous call. Our 'keeping track of' element is the is ** n * ** factorial(n-1)
 
 * Often for numerical questions, this will involve a count, 
 e.g. 
