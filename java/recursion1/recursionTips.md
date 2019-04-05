@@ -74,9 +74,25 @@ e.g.
 ```java
 return str.charAt(0) + functionName(str.substring(1));
 ```
-___
-Don't forget to recall the function!
+charAt(0) cannot be used to assign a new value to index 0 of the string, i.e. we cannot say:
+``` str.charAt(0) = 'h'```. See the below example for how this type of question should be approached:
 
-This image does a good job at visualizing the stack going towards the base case before working back up to the result.
+```java
+public String changeXY(String str) {
+  if (str.length() == 0)
+    return str;
+  
+  if (str.charAt(0) == 'x') 
+    return 'y' + changeXY(str.substring(1));
+    
+  return str.charAt(0) + changeXY(str.substring(1));
+}
+```
+___
+#### Lastly: Don't forget to recall the function!
+
+## Visualising the method call stack during recursion:
+
+This image does a good job at visualising the stack going towards the base case before working back up to the result.
 
 ![](https://he-s3.s3.amazonaws.com/media/uploads/0e2df2e.png)
