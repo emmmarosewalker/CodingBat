@@ -39,6 +39,11 @@ return n * factorial(n-1);
 ```
 our reducer in this case is n-1
 
+To reduce by one digit at a time, like in the sumDigits coding bat question:
+```java
+return someFunction(n/10); 
+```
+
 * Often for String questions our reducer will be:
 str.substring(1); // this function returns the string from the passed index to the end, e.g. 
 ```java
@@ -47,11 +52,6 @@ h.substring(1); // returns "ello"
 ```
 
 substring() can also take 2 arguments, a start and stop (non inclusive) index.
-
-To reduce by one digit at a time:
-```java
-return someFunction(n/10); 
-```
 ____
 
 ## 3. What do you want to keep track of?
