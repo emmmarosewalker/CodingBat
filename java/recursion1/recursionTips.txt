@@ -16,6 +16,7 @@ if (str.length() == 0){
     return str;
 }
 
+* Or if it is a string question but return type is int:
 if (str.length() == 0){
     return 0;
 }
