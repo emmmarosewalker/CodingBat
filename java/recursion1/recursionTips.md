@@ -1,6 +1,7 @@
 # Elements of a recursive function:
 
-## 1. What is your base case (think logically about what this would be*, e.g. factorial.
+## 1. What is your base case (think logically about what this would be*
+e.g. factorial.
 ```java
 if (n == 1){
     return 1;
@@ -31,9 +32,8 @@ every answer would be 0 (as we are multiplying) so the 0 base case will not work
 
 ____
 
-## 2. What is your reducer element? If we are not progressing toward the base case, we 
-will run into StackOverflowException (sort of like an infinite loop until we run out 
-of memory on the 'stack'). For the factorial example:
+## 2. What is your reducer element?
+If we are not progressing toward the base case, we will run into StackOverflowException (sort of like an infinite loop until we run out of memory on the 'stack'). For the factorial example:
 ```java
 return n * factorial(n-1); 
 ```
@@ -49,9 +49,8 @@ h.substring(1); // returns "ello"
 substring() can also take 2 arguments, a start and stop (non inclusive) index.
 ____
 
-## 3. What do you want to keep track of? In factorial case, we want to multiply each 
-function call by the answer of the previous call. This is the n * element of our return
-statement.
+## 3. What do you want to keep track of?
+In factorial case, we want to multiply each function call by the answer of the previous call. This is the n * element of our return statement.
 
 * Often for numerical questions, this will involve a count, 
 e.g. 
