@@ -1,6 +1,6 @@
 # Elements of a recursive function:
 
-## 1. What is your base case (think logically about what this would be*
+## 1. What is your base case (think logically about what this would be*)
 e.g. factorial.
 ```java
 if (n == 1){
