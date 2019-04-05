@@ -78,6 +78,14 @@ charAt(index) cannot be used to assign a new value to the given index of the str
 ``` str.charAt(4) = 'h'```. See the below example for how this type of question should be approached:
 
 ```java
+/*
+Given a string, compute recursively (no loops) a new string where all the lowercase 'x' chars have been changed to 'y' chars.
+
+changeXY("codex") → "codey"
+changeXY("xxhixx") → "yyhiyy"
+changeXY("xhixhix") → "yhiyhiy"
+*/
+
 public String changeXY(String str) {
   if (str.length() == 0)
     return str;
