@@ -94,5 +94,6 @@ ___
 ## Visualising the method call stack during recursion:
 
 This image does a good job at visualising the stack going towards the base case before working back up to the result.
+[source](https://www.hackerearth.com/practice/basic-programming/recursion/recursion-and-backtracking/tutorial/).
 
 ![](https://he-s3.s3.amazonaws.com/media/uploads/0e2df2e.png)
