@@ -1,5 +1,4 @@
 # Elements of a recursive function:
-____
 
 ## 1. What is your base case (think logically about what this would be*, e.g. factorial.
 if (n == 1){
