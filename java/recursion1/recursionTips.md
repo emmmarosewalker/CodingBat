@@ -74,8 +74,8 @@ e.g.
 ```java
 return str.charAt(0) + functionName(str.substring(1));
 ```
-charAt(0) cannot be used to assign a new value to index 0 of the string, i.e. we cannot say:
-``` str.charAt(0) = 'h'```. See the below example for how this type of question should be approached:
+charAt(index) cannot be used to assign a new value to index 0 of the string, i.e. we cannot say:
+``` str.charAt(4) = 'h'```. See the below example for how this type of question should be approached:
 
 ```java
 public String changeXY(String str) {
